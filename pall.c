@@ -13,13 +13,13 @@ void pall(stack_t **stack, unsigned int line_number)
 	if (stack == NULL)
 		return;
 
-	while (temp != NULL)
+	while (temp->next != NULL)
 	{
 		printf("%d\n", temp->n);
 		temp = temp->next;
 	}
 
-/*	printf("%d\n", temp->n);
-	printf("0\n");*/
+	printf("%d\n", temp->n);
+/*	printf("0\n");*/
 
 }
