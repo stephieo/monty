@@ -1,27 +1,24 @@
-#include "monty.h"
+#include "monty2.h"
 /**
- * pall - prints the elements in stack
- * @stack: address of head of stack
- * @line_number: line number where command is located
- */
+* pall - prints elements in stack
+* @stack: pointer to top
+* @line_number: current line number of monty file
+*/
 void pall(stack_t **stack, unsigned int line_number)
 {
-	size_t i;
-	const stack_t *counter = *stack;
+    stack_t *temp = *stack;
+    
+    (void)line_number;
 
-	(void)line_number;
+    if (*stack == NULL)
+        return;
 
-	if (*stack == NULL)
-	{
-		return;
-	}
-
-	for (i = 1; counter->next != NULL; i++)
-	{
-		printf("%d\n", counter->n);
-		counter = counter->next;
-	}
-	printf("%d\n", counter->n);
-	printf("0\n");
+    while (temp->next != NULL)
+    {
+        printf("%d\n", temp->n);
+        temp = temp->next;
+    }
+    printf("%d\n", temp->n);
+    printf("0\n");
 
 }
