@@ -1,18 +1,21 @@
-#include "monty.h"
+#include "monty2.h"
 /**
- * pint - print the top element in a stack
- * @stack: pointer to head of stack
- * @line_number: line of current instruction
- */
+* pint - prints  the value at the top of the stack
+* @stack: pointer to top
+* @line_number: current line number of monty file
+*/
 void pint(stack_t **stack, unsigned int line_number)
 {
-	if (*stack == NULL)
-	{
-		fprintf(stderr, "L%d: can't pint, stack empty\n", line_number);
-		holder.status = 0;
-	}
-	else
-	{
-		printf("%d\n", (*stack)->n);
-	}
+    stack_t *temp = *stack;
+    
+
+    if (*stack == NULL)
+    {
+        fprintf(stderr, "L%d: can't pint, stack empty\n", line_number);
+        free(holder.buffer);
+        exit(EXIT_FAILURE);
+    }
+        
+        printf("%d\n", temp->n);
+
 }

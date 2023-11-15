@@ -1,11 +1,10 @@
-#include "monty.h"
+#include "monty2.h"
 /**
- * nop - Does nothing
- * @stack: pointer to top of stack
- * @line_number: line of opcode
- */
+* nop -
+*/
 void nop(stack_t **stack, unsigned int line_number)
 {
-	(void) line_number;
-	(void) stack;
+    (void)stack;
+    (void)line_number;
+    return;
 }
