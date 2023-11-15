@@ -1,4 +1,4 @@
-#include "monty2.h"
+#include "monty.h"
 /**
 * pall - prints elements in stack
 * @stack: pointer to top
