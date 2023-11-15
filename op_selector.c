@@ -1,4 +1,4 @@
-#include "monty.h"
+#include "monty2.h"
 /**
  * o_s - compares string to opcodes
  * @line_num: line from monty file
@@ -9,12 +9,13 @@ void(*o_s(unsigned int line_num))(stack_t **stack, unsigned int line_number)
 {
 	int i = 0;
 	instruction_t opcode_ls[] = {
-		{"push", push},
-		{"pall", pall},
-		{"pint", pint},
-		{"pop", pop},
-		{"nop", nop},
-		{NULL, NULL}
+		{"push", push}, {"pall", pall},
+		{"pint", pint}, {"pop", pop},
+		{"nop", nop}, {"swap", swap},
+		{"add", add}, {"sub", sub},
+		{"div", my_div}, {"mul", mul},
+		{"mod", mod}, {"rotl", rotl},
+		{"rotr", rotr}, {NULL, NULL}
 	};
 
 

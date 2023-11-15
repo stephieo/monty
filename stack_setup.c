@@ -1,24 +1,18 @@
-#include "monty.h"
+#include "monty2.h"
 /**
- * free_stack - frees all nodes in a stack
- * @stack: pointer to top of stack
+ * stack_setup - initializes an sempty stack
+ * @stack: pointer to stack head
  */
-void free_stack(stack_t *stack)
+void stack_setup(stack_t **stack)
 {
-	stack_t *temp = stack;
+	stack_t *init = malloc(sizeof(stack_t));
 
-	if (stack == NULL)
-	{
-		return;
-	}
+	if (init == NULL)
+		holder.status = 0;
 
-	while (temp->next)
-	{
-		temp = temp->next;
-		free(temp->prev);
-		if (temp->next == NULL)
-			break;
-	}
-	free(temp);
-	stack = NULL;
+	*stack = init;
+	init->n = 0;
+	init->next = NULL;
+	init->prev = NULL;
+
 }
