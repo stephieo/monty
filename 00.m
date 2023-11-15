@@ -1,8 +1,8 @@
 pall
 push 1
-pint
+#pint
 push 2
-pint
+#pint
 push 3
-pint
+#pint
 pall
