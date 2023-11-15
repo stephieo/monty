@@ -1,4 +1,4 @@
-#include "monty2.h"
+#include "monty.h"
 /**
  * check_and_open - checks for correct args and opens montyfile
  * @arg_no: argument count

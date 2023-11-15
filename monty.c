@@ -1,4 +1,4 @@
-#include "monty2.h"
+#include "monty.h"
 /**
  * main - test for monty practice project
  * @argc:

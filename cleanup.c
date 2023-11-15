@@ -1,4 +1,4 @@
-#include "monty2.h"
+#include "monty.h"
 /**
  * cleanup - collection of cleanup function calls
  * @stack: head of stack

@@ -1,4 +1,4 @@
-#include "monty2.h"
+#include "monty.h"
 /**
  * o_s - compares string to opcodes
  * @line_num: line from monty file

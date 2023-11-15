@@ -1,4 +1,4 @@
-#include "monty2.h"
+#include "monty.h"
 /**
  * stack_setup - initializes an sempty stack
  * @stack: pointer to stack head
